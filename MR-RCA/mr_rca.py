@@ -15,10 +15,10 @@ from collections import Counter
 # 'https://api.openai.com/v1'
 
 
-failure_cls_client = OpenAI(api_key="hk-ie75ae100004709837b67727bfd51123be89021b73340c41", base_url="https://api.openai-hk.com/v1")
-summary_generate_client = OpenAI(api_key="hk-ie75ae100004709837b67727bfd51123be89021b73340c41", base_url="https://api.openai-hk.com/v1")
-fault_cls_client = OpenAI(api_key="hk-ie75ae100004709837b67727bfd51123be89021b73340c41", base_url="https://api.openai-hk.com/v1")
-client4 = OpenAI(api_key="hk-ie75ae100004709837b67727bfd51123be89021b73340c41", base_url="https://api.openai-hk.com/v1")
+failure_cls_client = OpenAI(api_key="", base_url="")
+summary_generate_client = OpenAI(api_key="", base_url="")
+fault_cls_client = OpenAI(api_key="", base_url="")
+
 
 path = list[str]
 
