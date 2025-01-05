@@ -8,12 +8,6 @@ import os
 import json
 
 
-def save(best_res, config):
-    filename = f"./result/_{config.method}_{config.s_dataset}_{config.t_dataset}_bs{config.batch_size}_emd{config.embed_dim}_hid{config.hidden_dim}_beta{config.beta}_el{config.event_len}_eps{config.epsilon}.txt"
-    # filename = f"./result/_uda_rca_use_only_GAT{config.only_use_gat}_use_gat_linear_{config.use_gat_linear}_ratio{config.ratio}.txt"
-    # filename = f"./result/_uda_rca_AIops2022_AIops2021_bs45_emd5_hid5_beta{b}_el20.txt"
-    with open(filename, "w") as fw:
-        json.dump(best_res, fw)
 
 
 def seed_everything(seed=2024):

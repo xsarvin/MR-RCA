@@ -24,10 +24,7 @@ path = list[str]
 
 
 
-
-
-
-class match_failure_type(BaseModel):
+class failure_cls(BaseModel):
     failure_type: str
     chain_of_thought: str
 
@@ -119,7 +116,7 @@ def inference(data, test_index, data_vector, event_weight, event_tf_idf, failure
                     {"role": "system", "content": root_classification["failure_cls_{}".format(args.entity)]}]
                 for _ in range(args.consistency_num):
                     event = ask_gpt(client=failure_cls_client, question=context_prompt, conversation_history=history_context,
-                                    response_format=match_failure_type)
+                                    response_format=failure_cls)
                     answers.append(event.failure_type)
                     history_context.append(
                         {"role": "assistant", "content": event.failure_type + " " + event.chain_of_thought})
