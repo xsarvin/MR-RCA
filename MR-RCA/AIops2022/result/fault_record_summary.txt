@@ -1,0 +1,1 @@
+alpha:0.6_beta:0.7_lamb:60_k:3_entity:node the precision is 0.7089856089856088, recall is 0.5945945945945946, f-score is 0.5956066456066456
